@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h4 {
+  font-family: Inter;
+}
+
+@font-face {
+  font-family: "Beefour";
+  src: url("assets/font/Bee-One.ttf") format("truetype"),
+  url("assets/font/Bee-One.woff") format("woff"),
+  url("assets/font/Bee-One.woff2") format("woff2"),
+  ;
+}
+
+.top_header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  svg {
+    padding-left: 20px;
+  }
+
+  .top_header-top_content {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      color: #fff;
+      font-weight: 400;
+    }
+
+    .top_content_right_content {
+      display: flex;
+      gap: 20px;
+
+      .top_content_menu_hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        color: #fff;
+        cursor: pointer;
+
+        i {
+          font-size: 25px;
+        }
+      }
+
+      .top_content_get_in_touch_button {
+        color: #fff;
+        border: 1px solid #cdcdcd;
+        height: 45px;
+        width: 160px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: #ecccc3;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+}
+
+.company_info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .company_left-services {
+    padding: 20px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #ecccc3;
+    text-align: left;
+    gap: 30px;
+
+    .list_of_services {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h2 {
+        font-weight: lighter;
+        margin-bottom: 30px;
+      }
+    }
+
+    div p {
+      color: #191919;
+      font-weight: 600;
+    }
+
+    .view_services_button {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      cursor: pointer;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .company_right-about_us {
+    width: 60%;
+    background-color: #eebe1b;
+    padding: 20px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: lighter;
+      margin-bottom: 30px;
+    }
+
+    .about_us_content {
+      font-size: 1.8rem;
+      color: #000;
+      line-height: 1.5;
+      span {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .read_our_latest_news_button {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      cursor: pointer;
+      font-weight: 600;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }  
+}
+
+.categories_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .category {
+    position: relative;
+    cursor: pointer;
+    height: 245px;
+
+    .back_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      color: #fff;
+      .video {
+        video { 
+          width: 450px;
+          height: 245px;
+          object-fit: cover;
+        }
+      }
+      .heading {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        /* font-size: 56px; */
+        font-family: Beefour;
+        letter-spacing: 5px;
+        font-weight: 400;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+      }
+
+      .content {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    img {
+      width: 450px;
+      height: 100%;
+    }
+
+    &:hover {
+      img {
+        display: none;
+      }
+    }
+  }
+}

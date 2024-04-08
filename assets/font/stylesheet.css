@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Bee';
+    src: url('Bee-One.eot');
+    src: local('Bee One'), local('Bee-One'),
+        url('Bee-One.eot?#iefix') format('embedded-opentype'),
+        url('Bee-One.woff2') format('woff2'),
+        url('Bee-One.woff') format('woff'),
+        url('Bee-One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bee';
+    src: url('Bee-Two.eot');
+    src: local('Bee Two'), local('Bee-Two'),
+        url('Bee-Two.eot?#iefix') format('embedded-opentype'),
+        url('Bee-Two.woff2') format('woff2'),
+        url('Bee-Two.woff') format('woff'),
+        url('Bee-Two.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bee';
+    src: url('Bee-Three.eot');
+    src: local('Bee Three'), local('Bee-Three'),
+        url('Bee-Three.eot?#iefix') format('embedded-opentype'),
+        url('Bee-Three.woff2') format('woff2'),
+        url('Bee-Three.woff') format('woff'),
+        url('Bee-Three.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bee';
+    src: url('Bee-Four.eot');
+    src: local('Bee Four'), local('Bee-Four'),
+        url('Bee-Four.eot?#iefix') format('embedded-opentype'),
+        url('Bee-Four.woff2') format('woff2'),
+        url('Bee-Four.woff') format('woff'),
+        url('Bee-Four.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
