@@ -220,8 +220,8 @@ h4 {
 
 .heading {
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: Beefour;
@@ -374,6 +374,7 @@ footer {
         font-size: 25px;
         color: #fff;
         cursor: pointer;
+        display: flex;
 
         i {
           margin-right: 40px;
@@ -385,21 +386,19 @@ footer {
     }
 
     .affiliates {
-      display: flex;
-      flex-direction: column;
       gap: 20px;
+
+      .affiliates_images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+      }
 
       h2 {
         font-size: 2rem;
         font-weight: 600;
         margin-bottom: 20px;
-      }
-
-      .affiliates_images img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        margin-right: 40px;
       }
     }
   }
