@@ -18,21 +18,43 @@
 
 <body>
 
+
   <header class="top_header">
-    <div class="top_header-top_content">
+    <div class="top_header-top_content" id="top_header-top_content">
 
       <h1>
         Aricoris Logics
       </h1>
 
       <div class="top_content_right_content">
-        <div class="top_content_menu_hamburger">
-          <p>Menu</p>
-          <i class="fa-solid fa-bars"></i>
+        <p>Menu</p>
+        <div class="hamburger" id="menu" onclick="toggleMenu()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
 
         <div class="top_content_get_in_touch_button">
           <p>Get in touch</p>
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay">
+        <div class="close_btn" onclick="closeMenu()" id="close_btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="overlay-menu">
+          <ul>
+            <li><a href="#">Blockchain Development</a></li>
+            <li><a href="#">Metaverse Development</a></li>
+            <li><a href="#">Game Development</a></li>
+            <li><a href="#">AI Development</a></li>
+            <li><a href="#">IoT Development</a></li>
+            <li><a href="#">Web Apps Development</a></li>
+            <li><a href="#">Mobile Apps Development</a></li>
+            <li><a href="#">Devops and Cloud</a></li>
+            <li><a href="#">OpenAI Integration</a></li>
+          </ul>
         </div>
       </div>
 
@@ -89,7 +111,7 @@
         About us
       </h2>
       <p class="about_us_content">Join the fastest growing ecosystem. Arcoiris is the fastest blockchain in the world
-        and the fastest growing ecosystem in crypto, with thousands of projects spanning 
+        and the fastest growing ecosystem in crypto, with thousands of projects spanning
         <span>DeFi</span>, <span>NFTs</span>, <span>Web3</span>,
         <span>Blockchain Protocols</span> and <span>Nodes and Miners</span> projects.
       </p>
@@ -179,7 +201,7 @@
         </div>
         <div class="heading">
           <h3>IoT Development</h3>
-        </div>  
+        </div>
         <div class="content">
           <p>Blockchain, Metaverse</p>
           <p>Gaming</p>
@@ -327,6 +349,8 @@
         </div>
       </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
